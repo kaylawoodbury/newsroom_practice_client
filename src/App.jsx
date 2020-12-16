@@ -9,12 +9,10 @@ import Display from "./Display";
 const App = props => {
   return (
     <Suspense fallback={<h1>Loading</h1>}>
-      <DisplayHeader />
-      <HeaderCategories />
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={Display}></Route>
         <Route exact path={props.categoryName} component={Display}></Route>
-      </Switch>
+      </Switch> */}
     </Suspense>
   );
 };
